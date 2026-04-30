@@ -1,0 +1,21 @@
+# Sistema operativo
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+Desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.sublime-project
+*.swp
+
+# Dependencias (si en el futuro se agrega npm)
+node_modules/
+
+# Build
+dist/
+
+# Logs
+*.log

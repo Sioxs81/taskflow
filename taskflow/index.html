@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <header class="app__header">
+      <h1 class="app__title">TaskFlow</h1>
+      <p class="app__counter">
+        Tienes <span id="pendingCount">0</span> tarea(s) pendiente(s)
+      </p>
+    </header>
+
+    <div class="app__input-area">
+      <input
+        class="app__input"
+        id="taskInput"
+        type="text"
+        placeholder="Escribe una nueva tarea..."
+        maxlength="120"
+      />
+      <button class="app__btn-add" id="addBtn" title="Agregar tarea">+</button>
+    </div>
+
+    <p class="app__error" id="errorMsg">
+      ⚠ La tarea no puede estar vacía o contener solo espacios.
+    </p>
+
+    <ul class="task-list" id="taskList">
+      <li class="task-list__empty" id="emptyState">
+        No hay tareas aún. ¡Agrega una!
+      </li>
+    </ul>
+
+    <footer class="app__footer">
+      <span class="app__footer-info" id="totalInfo">0 tareas en total</span>
+      <button class="app__btn-clear" id="clearBtn">Limpiar completadas</button>
+    </footer>
+
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
